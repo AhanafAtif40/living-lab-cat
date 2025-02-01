@@ -34,62 +34,58 @@
     <body class="font-sora">
         <!-- Header Section -->
         <header class="md:container mx-auto">
-            <nav>
-                <div class="navbar bg-base-100">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
+            <header class="bg-[#FFF9F4]">
+                <!-- Navbar Section -->
+                <nav class="w-full px-8 mx-auto border-b-2 border-black lg:border-none max-w-screen-2xl">
+                    <div class="navbar">
+                        <div class="gap-3 navbar-start">
+                            <img src="c1-assets/logo-header.png" alt="Logo" class=" lg:block">
+                            <p class="hidden w-20 h-auto text-2xl lg:block">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
                         </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                          <li><a>Find a pet</a></li>
-                          <li><a>Breeds</a></li>
-                          <li><a>Contact us</a></li>
-                        </ul>
-                      </div>
-                      <img src="c1-assets/logo-header.png" alt="">
-                      <a class="btn btn-ghost text-xl">Browse<span class="warning">4</span>Pets</a>
+                        <div class="hidden navbar-center lg:flex">
+                            <ul class="px-1 menu menu-horizontal">
+                                <li><a>Find a pet</a></li>
+                                <li><a>Breeds</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="hidden gap-3 navbar-end lg:flex">
+                            <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            <a class="btn btn-outline btn-sm hover:bg-[#FFDC26] border-[#FFDC26] rounded-lg">Login</a>
+                            <a class="btn btn-outline btn-sm hover:bg-yellow-600 border-[#FFDC26] rounded-lg bg-[#FFDC26]">Register</a>
+                        </div>
+                        <div class="navbar-end lg:hidden">
+                            <div class="dropdown ">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                                    </svg>
+                                </div>
+                                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 -ml-32 w-44 rounded-box z-[1] mt-3 shadow">
+                                    <li><a>Find a pet</a></li>
+                                    <li><a>Breeds</a></li>
+                                    <li><a>Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
                     </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1">
-                        <li><a>Find a pet</a></li>
-                          <li><a>Breeds</a></li>
-                          <li><a>Contact us</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end gap-3">
-                        <i class="fa-regular fa-bell"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <a class="btn btn-outline btn-sm hover:bg-[#FFDC26] border-[#FFDC26] rounded-lg">Login</a>
-                      <a class="btn bg-cat-warning text-black">Register</a>
-                    </div>
-                  </div>
-            </nav>
+                </nav>
+            </header>
             <!-- Banner Start -->
-             <div class="flex">
-                <div>
-                    <h1 class="text-5xl font-bold">Pamper Your Pet,<br> Because They Deserve the Bes</h1>
-                    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                    <br>
-                    <button class="btn bg-cat-warning text-black">Find a pet</button>
+            <div class="px-12 mx-auto max-w-screen-2xl">
+                <div class="py-24 lg:flex">
+                    <div>
+                        <h1 class="mb-4 text-6xl animate-bounce">Pamper Your Pet,<br>
+                         Because They Deserve the Best</h1>
+                        <p class="mb-6 text-gray-600 sora-font">Discover a world of treats, toys, and essentials handpicked
+                            for your furry friends. Shop now and make tails wag with joy!</p>
+                        <button class="btn  bg-[#FFDC26] mb-8">Find a pet</button>
+                    </div>
+                    <img class="overflow-hidden" src="c1-assets/cat-big.png" alt="Cute kitten">
                 </div>
-                <div>
-                    <img class="overflow-hidden bg-top" src="c1-assets/cat-big.png" alt="">
-                </div>
-             </div>
+            </div>
              <!-- Card Section -->
              <section class="px-12 mx-auto max-w-screen-2xl mb-14">
                 <h2 class="mb-8 text-2xl font-bold">Browse By Categories</h2>
@@ -151,7 +147,7 @@
                                         <h2 class="mb-2 text-3xl card-title">T-Shirt For Dogs</h2>
                                         <p class="mb-2 sora-font">Discover a world of treats, toys, and essentials
                                             handpicked for </p>
-                                        <button class="w-2/6 px-4 py-2 text-black bg-white rounded-lg">Buy Now</button>
+                                        <button class="w-2/6 px-4 py-2 text-black bg-white rounded-lg">ShopNow</button>
                                     </div>
                                     <figure class="">
                                         <img class="ml-24 mt-28" src="c1-assets/cute-pet-small.png" alt="vajitble">
